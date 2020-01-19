@@ -3,9 +3,9 @@ services:
   php7:
     build: .docker/php
     ports:
-      - 80:8080
+      - 80:3000
     environment:
       XDEBUG_CONFIG: "remote_host=172.17.0.1 remote_enable=1"
     volumes:
-      - .:/app
+      - .:/jigsaw
       - ~/.composer:/root/.composer
