@@ -1,5 +1,10 @@
 {
     "require": {
         "tightenco/jigsaw": "^1.3"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "git clone https://github.com/LineageOS/lineage_wiki"
+        ]
     }
 }
