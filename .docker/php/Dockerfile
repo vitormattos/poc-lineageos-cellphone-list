@@ -1,4 +1,4 @@
-FROM php:7.4-fpm
+FROM php:latest
 
 RUN apt-get update
 
