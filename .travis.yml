@@ -1,0 +1,26 @@
+language: php
+php:
+  - 7.4
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build_production
+  repo: $GITHUB_REPO
+  target_branch: master
+  keep-history: true
+  email: $GITHUB_MAIL
+  name: Travis-CI
+  fqdn: $GITHUB_DOMAIN
+  on:
+    branch: master
+
+before_script:
+  - npm install -g gulp
+
+before_deploy:
+  - composer install
+  - composer prod
+
+script: /bin/true
