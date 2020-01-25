@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Filesystem\Filesystem;
 use TightenCo\Jigsaw\Jigsaw;
 
 /** @var $container \Illuminate\Container\Container */
@@ -15,3 +16,8 @@ use TightenCo\Jigsaw\Jigsaw;
  *     // Your code here
  * });
  */
+$events->afterBuild(function ($jigsaw) {
+    $outputPath = $jigsaw->getDestinationPath();
+    $filesystem = new Filesystem();
+    $filesystem->copyDirectory(__DIR__.'/lineage_wiki/images/devices/', $outputPath.'/images/devices');
+});

@@ -1,0 +1,55 @@
+@import '~bootstrap/scss/bootstrap';
+
+[class*="card-product"] .img-wrap img {
+    max-height: 217px;
+    max-width: 100%;
+    width: auto;
+    display: inline-block;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.card-product-list {
+	margin-bottom: 20px;
+}
+
+.img-thumbnail {
+	border: none;
+}
+
+.list-group-item {
+    padding: 8px;
+    border: none;
+}
+
+.emojione {
+    width: 20px;
+}
+
+.bg {
+    background-color: #f8f9fa;
+}
+
+.padding-y {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-footer .title {
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #212529;
+}
+
+.section-footer ul a {
+    color: inherit;
+}
+
+.page-device-image {
+    max-width: 100%;
+    padding-right: 15px;
+}
+
+.deviceinfo .head {
+	text-align: center;
+}
