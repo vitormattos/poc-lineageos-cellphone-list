@@ -12,7 +12,6 @@ deploy:
   keep-history: true
   email: $GITHUB_MAIL
   name: Travis-CI
-  fqdn: $GITHUB_DOMAIN
   on:
     branch: master
 
