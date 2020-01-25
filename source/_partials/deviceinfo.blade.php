@@ -87,7 +87,7 @@
             <th scope="row">GPU</td>
             <td>{{ $page->gpu }}</td>
         </tr>
-        @if ($page->network)
+        @if ($page->network && isset($page->network[0]->bands))
         @if ($page->network[0]->bands != '' or $page->network[1]->bands != '' or $page->network[2]->bands != '')
         <tr>
             <th scope="row">Network</td>
