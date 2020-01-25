@@ -4,7 +4,7 @@ use Symfony\Component\Yaml\Yaml;
 
 return [
     'production' => false,
-    'baseUrl' => '',
+    'baseUrl' => getenv('BASE_URL'),
     'collections' => [
         'device' => [
             'extends' => '_layouts.device',

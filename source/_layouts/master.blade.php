@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        <link rel="stylesheet" href="{{ $page->baseUrl }}/{{ mix('css/main.css', 'assets/build') }}">
         <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet" crossorigin="anonymous">
     </head>
     <body>
@@ -112,6 +112,6 @@
                 </section>
             </div>
         </footer>
-        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        <script src="{{ $page->baseUrl }}/{{ mix('js/main.js', 'assets/build') }}"></script>
     </body>
 </html>
