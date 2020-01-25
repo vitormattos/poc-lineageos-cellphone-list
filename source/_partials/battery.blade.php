@@ -1,10 +1,10 @@
-@if ($modelname)
+@if (isset($modelname))
 {{ $modelname }}:&nbsp;
 @endif
-@if ($battery_data['removable'])
-Removable
+@if (!empty($battery_data['removable']))
+    Removable
 @else
-Non-removable
+    Non-removable
 @endif &nbsp;
 @if ($battery_data['tech'])
     {{ $battery_data['tech'] }}&nbsp;

@@ -137,7 +137,7 @@
         <tr>
             <th scope="row">Bluetooth</td>
             <td>
-                @if ($page->bluetooth['profiles'])
+                @if (!empty($page->bluetooth['profiles']))
                     {{ $page->bluetooth['spec'] }} with <?php echo implode(', ', $page->bluetooth['profiles']); ?>
                 @else
                     {{ $page->bluetooth['spec'] }}
