@@ -163,7 +163,7 @@
             </td>
         </tr>
         @endif
-        @if ($page->cameras and count($page->cameras) > 0)
+        @if (!empty($page->cameras) && is_array($page->cameras) && count($page->cameras) > 0)
         <tr>
             <th scope="row">Cameras</td>
             <td>{{ count($page->cameras) }}

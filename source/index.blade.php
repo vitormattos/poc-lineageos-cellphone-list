@@ -43,7 +43,7 @@ pagination:
                                     <td>
                                         @if (is_string($device->battery))
                                             {{ $device->battery }}
-                                        @else
+                                        @elseif(!empty($device->battery['capacity']))
                                             {{ $device->battery['capacity'] }} {{ $device->battery['tech'] }}
                                         @endif
                                     </td>
