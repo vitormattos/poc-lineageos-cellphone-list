@@ -7,7 +7,7 @@ title: Login
     <div class="card mx-auto" style="max-width:520px; margin-top:40px;">
         <div class="card-body">
             <h4 class="card-title mb-4">Fake sign in</h4>
-            <form method="POST" action="{{ $page->baseUrl }}/private.json" id="login">
+            <form method="GET" action="{{ $page->baseUrl }}/private.json" id="login">
                 <div class="form-group">
                    <input name="username" class="form-control" placeholder="Username" type="text">
                 </div>
