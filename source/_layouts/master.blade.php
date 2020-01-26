@@ -22,6 +22,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="{{ $page->baseUrl }}/about">About</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ $page->baseUrl }}/login">Private</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -113,5 +116,6 @@
             </div>
         </footer>
         <script src="{{ $page->baseUrl }}{{ mix('js/main.js', 'assets/build') }}"></script>
+        @yield('js')
     </body>
 </html>
