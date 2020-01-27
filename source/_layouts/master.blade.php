@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>{{ $page->title }}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -23,7 +24,7 @@
                     <a class="nav-link" href="{{ $page->baseUrl }}/about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ $page->baseUrl }}/login">Private</a>
+                    <a class="nav-link" href="{{ $page->baseUrl }}/login">Login</a>
                   </li>
                 </ul>
               </div>
@@ -37,11 +38,7 @@
                         <li class="breadcrumb-item active" aria-current="page"><a href="{{ $page->baseUrl }}/" aria-current="page">Home</a></li>
                         @if ($page->getPath() != '/')
                             <li class="breadcrumb-item">
-                                @if ($page->codename)
-                                    {{ $page->vendor }} {{ $page->name }} ({{ $page->codename }})
-                                @else
-                                    {{ $page->title }}
-                                @endif
+                                {{ $page->title }}
                             </li>
                         @endif
                     </ol>

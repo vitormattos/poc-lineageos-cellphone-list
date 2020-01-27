@@ -1,5 +1,5 @@
 ---
-title: Login
+title: Private
 ---
 @extends('_layouts.master')
 @section('body')

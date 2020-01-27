@@ -34,6 +34,7 @@ return [
                     }
                     $service['singleRelease'] = $service['orderBy'];
                     $service['filename'] = $service['codename'];
+                    $service['title'] = "{$service['vendor']} {$service['name']} ({$service['codename']})";
                     $devices[] = $service;
                 }
                 return collect($devices);

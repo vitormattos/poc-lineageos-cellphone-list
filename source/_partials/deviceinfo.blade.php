@@ -5,7 +5,7 @@
     <table class="deviceinfo table col-md-6">
         <tbody>
         <tr>
-            <th colspan="2" class="head">{{ $page->vendor }} {{ $page->name }} ({{ $page->codename }})</th>
+            <th colspan="2" class="head">{{ $page->title }}</th>
         </tr>
         <tr>
             <th scope="row">Released</th>

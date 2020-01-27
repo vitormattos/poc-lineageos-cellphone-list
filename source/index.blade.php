@@ -1,4 +1,5 @@
 ---
+title: Home
 pagination:
   collection: device
 ---
