@@ -29,7 +29,7 @@ pagination:
                             <tbody>
                                 <tr>
                                     <th>RAM</th>
-                                    <td>{{ $device->ram }} {{ $device->ram }}</td>
+                                    <td>{{ $device->ram }}</td>
                                     <th>Release</th>
                                     <td>{{ $device->singleRelease }}</td>
                                 </tr>
@@ -60,9 +60,7 @@ pagination:
             </div>
         </article>
     @endforeach
-    
-    
-    
+
     <nav aria-label="Page navigation sample">
       <ul class="pagination justify-content-center">
 
