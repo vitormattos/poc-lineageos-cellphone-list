@@ -18,7 +18,9 @@ pagination:
         <article class="card card-product-list">
             <div class="row no-gutters">
                 <aside class="col-md-3">
-                    <a href="{{ $page->baseUrl }}/device/{{ $device->codename }}" class="img-wrap"><img src="{{ $page->baseUrl }}/images/devices/{{ $device->image }}" class="img-thumbnail"></a>
+                    <a href="{{ $page->baseUrl }}/device/{{ $device->codename }}" class="img-wrap">
+                        <img src="{{ $page->baseUrl }}/images/devices/{{ $device->image }}" class="img-thumbnail" alt="{{$device->codename}}">
+                    </a>
                 </aside>
                 <div class="col-md-9">
                     <div class="info-main">
@@ -26,8 +28,8 @@ pagination:
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th>Name</th>
-                                    <td>{{ $device->vendor }} {{ $device->name }}</td>
+                                    <th>RAM</th>
+                                    <td>{{ $device->ram }} {{ $device->ram }}</td>
                                     <th>Release</th>
                                     <td>{{ $device->singleRelease }}</td>
                                 </tr>
@@ -48,8 +50,8 @@ pagination:
                                             {{ $device->battery['capacity'] }} {{ $device->battery['tech'] }}
                                         @endif
                                     </td>
-                                    <th>Name</th>
-                                    <td>{{ $device->name }}</td>
+                                    <th>Storage</th>
+                                    <td>{{ $device->storage }}</td>
                                 </tr>
                             </tbody>
                         </table>
